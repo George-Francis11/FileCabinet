@@ -68,41 +68,42 @@ a {
 
 // HEADER STYLING
 
-header {
-	background: #529ECC;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding: 1.75rem 0;
-	border-bottom: 1.5px solid #376490;
-		width: 100%;
-		margin: 0 auto;
-		div#logo {
-			display: inline-block;
-			width: 10rem;
-			float: left;
-			font-weight: bold;
-			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
-			font-size: 3.0rem;
-		}
-        div#logo a {
-            color: white;
-            text-decoration: none;
-        }
-		nav {
-			float: right;
-			a {
-				text-decoration: none;
-				color: white;
-				font-size: 1.1rem;
-				line-height: 1.5;
-				margin-left: 1rem;
-				&:hover {
-					color: $light_gray;
-				}
-			}
-	}
-}
+// header {
+// 	background: #529ECC;
+// 	position: absolute;
+// 	top: 0;
+// 	width: 100%;
+// 	padding: 1.75rem 0;
+// 	border-bottom: 1.5px solid #376490;
+// 	#headerinner {
+// 		width: 90%;
+// 		margin: 0 0;
+// 		nav {
+// 			float: right;
+// 			// a {
+// 			// 	text-decoration: none;
+// 			// 	color: white;
+// 			// 	font-size: 1.1rem;
+// 			// 	line-height: 1.5;
+// 			// 	margin-left: 1rem;
+// 			// 	&:hover {
+// 			// 		color: $light_gray;
+// 			// 	}
+// 			// }
+// 		}
+// 	}
+// }
+// #logo {
+// 	// display: inline-block;
+// 	width: 1rem;
+// 	float: left;
+// 	font-weight: bold;
+// 	color: white;
+// 	font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+// 	font-size: 1.0rem;
+// }
+
+
 
 // FOOTER STYLING (OPTIONAL)
 

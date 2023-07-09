@@ -1,8 +1,23 @@
-<h1> Here are all your docs </h1>
-<% @docs.each do |doc| %>
-  <h2> <%= link_to doc.title,doc %> </h2>
-  <p> <%= time_ago_in_words(doc.created_at)%> </p>
-  <p> <%= truncate(doc.content, length:50) %> </p>
-<% end %>
+<div class="wrapper_with_padding">
+  <div id="docs">
+    <% if not (@docs.blank?)%>
+      <% @docs.each do |doc| %>
+        <div class="doc">
+          <a href="<%= url_for [doc]%>">
+        <p class="title"> <%= doc.title %> </p>
+        <p class="date"> <%= time_ago_in_words(doc.created_at)%> </p>
+        <p class="content"> <%= truncate(doc.content, length:50) %> </p>
+        </a>
+        </div>
+        <% end %>  
+      <% else %>
+        <h2>no docs</h2>
+        <p>start creating documents and organizing them</p>
+        <button> <%= link_to 'Create Doc', new_doc_path %> </button>
+      <% end %>
+  </div>
+</div>
+
+
 <%= link_to "New Doc", new_doc_path %>
 
