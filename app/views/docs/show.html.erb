@@ -1,5 +1,14 @@
-<h1> <%= @doc.title %> </h1>
-<p> <%= @doc.content %> </p>
-<%= link_to "All Docs", docs_path%>
-<%= link_to "Edit", edit_doc_path(@doc) %>
-<%= link_to "Delete", doc_path(@doc), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<div class="wrapper_with_padding">
+    <div id="doc_show">
+      <h1 class="title"> <%= @doc.title %> </h1>
+      <p> <%= simple_format(@doc.content) %> </p>
+
+      <button class="buttons">
+      <%= link_to "Edit", edit_doc_path(@doc), class: "" %>
+      </button>
+      <button class="buttons">
+      <%= link_to "Delete", doc_path(@doc), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "" %>
+      </button>
+    </div>
+</div>
+
