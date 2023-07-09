@@ -1,0 +1,52 @@
+/*
+ *= require_self
+ */
+
+ @import 'normalize';
+ @import 'global.css.scss';
+ @import 'docs.css.scss';
+ @import 'welcome.css.scss';
+
+
+ header {
+	background: #529ECC;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 1.75rem 0;
+	border-bottom: 1.5px solid #376490;
+		width: 100%;
+		margin: 0 auto;
+		div#logo {
+			display: inline-block;
+			width: 10rem;
+			float: left;
+			font-weight: bold;
+			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+			font-size: 3.0rem;
+		}
+        div#logo a {
+            color: white;
+            text-decoration: none;
+        }
+		nav {
+			float: right;
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin-left: 1rem;
+				&:hover {
+					color: $light_gray;
+				}
+			}
+	}
+}
+
+#banner_content h1 {
+	@include bold_font;
+	color: $green;
+	font-size: 5.5rem;
+	margin: 0;
+}
